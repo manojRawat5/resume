@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .cont{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        .cont div div{
+            margin-bottom: 10px;
+        }
+        .nav-links li a{
+            transition:color 0.4s;
+        }
+        .nav-links li a:hover{
+            color: orangered;
+        }
+        .skill{
+            transition:transform 0.3s;
+        }
+        .skill:hover{
+            transform: translateY(-15px);
+            color: green;
+        }
+
+        .project-item:hover{
+            transform:translateY(-18px);
+        }
+        .project-item{
+            transition:transform 0.4s;
+        }
+        div a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="javascript:void(0);" onclick="downloadAndOpen();">Resume</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger-icon">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 style="color: black;">Hi, I'm Manoj Rawat</h1>
+            <p style="color: black;">Welcome to my portfolio. I am a full stack web developer passionate about creating amazing websites and applications.</p>
+            <a href="javascript:void(0);" class="cta-btn" onclick="downloadAndOpen();">Download Resume</a>
+        </div>
+        <img src="white back.png" alt="">
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="section-title">
+            <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+            <p>I am a passionate Dynamic full-stack web developer with expertise in
+                the MERN stack, known for leveraging JavaScript,
+                React.js, and Node.js to build scalable applications.
+                Excels in problem-solving and possesses strong
+                collaboration skills. Procient in integrating
+                generative AI and swiftly mastering emerging
+                technologies When I'm not coding, I love to learn new technologies and work on personal projects.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="section-title">
+            <h2>My Skills</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill">
+                <h3>JavaScript</h3>
+            </div>
+            <div class="skill">
+                <h3>React</h3>
+            </div>
+            <div class="skill">
+                <h3>Node.js</h3>
+            </div>
+            <div class="skill">
+                <h3>Git</h3>
+            </div>
+            <div class="skill">
+                <h3>Node</h3>
+            </div>
+            <div class="skill">
+                <h3>Express</h3>
+            </div>
+            <div class="skill">
+                <h3>MongoDb</h3>
+            </div>
+            <div class="skill">
+                <h3>Python</h3>
+            </div>
+            <div class="skill">
+                <h3>MySql</h3>
+            </div>
+            <div class="skill">
+                <h3>Tailwind Css</h3>
+            </div>
+            <div class="skill">
+                <h3>Figma</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- // Tools -->
+    <section id="skills">
+        <div class="section-title">
+            <h2>My Tools</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill">
+                <h3>GitHub</h3>
+            </div>
+            <div class="skill">
+                <h3>VS Code</h3>
+            </div>
+            <div class="skill">
+                <h3>Firebase</h3>
+            </div>
+            <div class="skill">
+                <h3>Netlify</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="section-title">
+            <h2>My Projects</h2>
+        </div>
+        <div class="project-grid">
+            <div class="project-item">
+                <img src="https://c8.alamy.com/comp/2KYKY8J/a-man-reporting-a-crime-online-2KYKY8J.jpg" alt="Project 1">
+                <h3>Crime Portal</h3>
+                <p>The Crime Reporting Project is a web-based application that allows users to report crimes, and analyze crime patterns</p>
+                <div>
+                    <a target="_blank" style="margin-right: 8px;" href="https://crimepetrol.netlify.app/" class="project-btn">Deployed-Link</a>
+                    <a target="_blank" href="https://github.com/manojRawat5/B41_WEB_033_Responsive-Rebels" class="project-btn">GitHub-link</a>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="https://www.shutterstock.com/image-photo/weekend-planner-agenda-calendar-concept-260nw-501692218.jpg" alt="Project 2">
+                <h3>Weekend Planner</h3>
+                <p>Weekend Planning is an online shopping application. It provides a platform for
+                    users to plan Their Weekend online.</p>
+                    <div>
+                        <a target="_blank" style="margin-right: 8px;" href="https://weekend-trip-anho.vercel.app/" class="project-btn">Deployed-Link</a>
+                        <a target="_blank" href="https://github.com/manoharv2512/Code_Compass_019" class="project-btn">GitHub-link</a>
+                    </div>
+            </div>
+            <div class="project-item">
+                <img src="https://unit4project.netlify.app/landingPage/utils/logo.png" alt="Project 3">
+                <h3>Vision Board</h3>
+                <p>
+                    focus on user experience and real-time collaboration, TeamCollab Whiteboard offers a wide range of drawing tools, sticky notes, and various canvas management features.</p>
+                    <div>
+                        <a target="_blank" style="margin-right: 8px;" href="https://unit4project.netlify.app/" class="project-btn">Deployed-Link</a>
+                        <a target="_blank" href="https://github.com/manojRawat5/VISION_BOARD" class="project-btn">GitHub-link</a>
+
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-title">
+            <h2>Contact Me</h2>
+        </div>
+        <div class="cont">
+            <div>
+                <div>
+                    <h3>Name -</h3>
+                    <h5>Manoj Rawat</h5>
+                </div>
+                <div>
+                    <h3>Address -</h3>
+                    <h5>Rudrapur,Uttarakhand</h5>
+                </div>
+                <div>
+                    <h3>Phone No. -</h3>
+                    <h5>8218704535</h5>
+                </div>
+                <div>
+                    <h3>Email -</h3>
+                    <h5>rsmanoj5mohit@gmail.com</h5>
+                </div>
+                <div>
+                    <h3>GitHub -</h3>
+                    <a target="_blank" href="https://github.com/manojRawat5">manojRawat5</a>
+                </div>
+            </div>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Manoj Rawat. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+    <script>
+        function downloadAndOpen() {
+            var fileUrl = "test.pdf"; // URL of the resume
+
+            // Open the file in a new tab
+            window.open(fileUrl, "_blank");
+
+            // Trigger the download using an anchor tag with 'download' attribute
+            var link = document.createElement("a");
+            link.href = fileUrl;
+            link.download = "resume.pdf"; // You can specify the file name here
+            link.click();
+        }
+    </script>
+</html>
